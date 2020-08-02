@@ -62,7 +62,7 @@ function init() {
 	for (let i = 0 ; i < GAME.boardSize * GAME.boardSize; i++) {
 		GAME.board[i] = null;
 	}
-	turn = 1;
+	turn = Math.floor(Math.random() * (2 - 1 + 1) + 1) === 1 ? 1 : -1;
 	winner = null;
 	//RENDER
 	render();
